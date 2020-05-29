@@ -1,3 +1,16 @@
 .article{
-    color: $raisin-black;
+    color: $nickel;
+    &__container{
+        padding-top: 10%;
+    }
+    &__date{
+        padding-bottom: 25px;
+    }
+    &__content{
+        line-height: 33px;
+    }
+    &__paragraph{
+        padding-bottom: 30px;
+    }
+    
 }

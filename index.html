@@ -14,15 +14,61 @@
       src="https://kit.fontawesome.com/2bbc03571f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap 4.5 -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <!-- mi css -->
     <link rel="stylesheet" href="assets/CSS/main.css" />
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="nav"></nav>
+    <nav class="nav navbar navbar-expand-lg sticky-top navbar-dark">
+      <div class="nav__container container">
+        <div class="nav__logo navbar-brand">
+          <a href="#"><img src="assets/images/logo.png" alt="" /> </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trabajos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Horas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- HERO-SECTION -->
-    <section class="hero-section">
+    <section class="hero-section text-center">
       <div class="hero-section__container">
+        <div class="hero-section__dot">
+          <p>.</p>
+        </div>
         <div class="hero-section__title">
           <h1>
             5 formas de cuidar tu corte de cabello
@@ -35,10 +81,10 @@
     </section>
     <!-- ARTICLE -->
     <article class="article">
-      <div class="article__container">
+      <div class="article__container container">
         <h3 class="article__date">27 de mayo de 2020</h3>
         <div class="article__content">
-          <p>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
             ratione sed molestiae quos placeat molestias animi perspiciatis,
             maxime similique id nostrum mollitia ut aut nulla. Explicabo cumque
@@ -47,7 +93,7 @@
             Culpa assumenda fugiat repellat? Quo tempora voluptas numquam eos.
             Magni, accusamus. Aliquam atque repellendus exercitationem ex nam!
           </p>
-          <p>
+          <p class="article__paragraph">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
             obcaecati ad voluptates distinctio iure quas aut sint ipsa
             necessitatibus, asperiores, sed ipsum dicta eius beatae cumque,
@@ -56,7 +102,7 @@
             vel similique cupiditate obcaecati, minus nemo aliquid ipsa quos
             doloremque id voluptatem fugiat vero ipsam nesciunt.
           </p>
-          <p>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel impedit
             blanditiis porro sit, dolorum dolore laborum? Quo vero distinctio
             totam corporis necessitatibus accusantium, beatae rerum eaque
@@ -65,13 +111,13 @@
             deserunt exercitationem nemo aperiam consequuntur ad delectus
             quaerat voluptates sint animi? Illum, ipsam fuga?
           </p>
-          <p>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed labore
             natus repellendus atque magnam. Aperiam assumenda cum pariatur
             voluptatem. Illo vero voluptate minima omnis laudantium veritatis
             tenetur id enim accusamus.
           </p>
-          <p>
+          <p class="article__paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
             sapiente vero quia maxime. Veniam enim et vitae adipisci, ea minus
             facere ratione reprehenderit dolor autem veritatis minima tenetur in
@@ -85,24 +131,29 @@
             error maiores ratione omnis! Saepe.
           </p>
         </div>
-        <div class="article_buttons"></div>
+        <div class="article__buttons">
+          <button type="button" class="article__buttons__share btn btn-sm btn-secondary">Compartir</button>
+          <button type="button" class="article__buttons__comment btn btn-sm btn-secondary">Comentar en Twitter</button>
+        </div>
       </div>
     </article>
     <!-- AUTHOR -->
     <section class="author-section">
       <hr />
-      <div class="author-section__container">
-        <div class="author-section__profile">
+      <div class="author-section__container container row">
+        <div class="author-section__profile text-center col-12 col-lg-6">
           <img
             class="author-section__image"
             src="assets/images/naomi-thai.png"
             alt="Naomi Thai picture"
           />
-          <h2 class="author-section__name">Naomi Thai</h2>
-          <a href="#"><h4>@Naothai</h4></a>
-          <a href="#"><h4>depelos.com</h4></a>
+          <div class="author-section__links">
+            <h2 class="author-section__name">Naomi Thai</h2>
+            <a href="#"><h4>@Naothai</h4></a>
+            <a href="#"><h4>depelos.com</h4></a>
+          </div>
         </div>
-        <div class="author-section__description">
+        <div class="author-section__description d-none d-lg-block col-6">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
             maxime possimus quod totam error laudantium perspiciatis excepturi
@@ -113,16 +164,46 @@
       </div>
     </section>
     <!-- Pagination -->
-    <section class="pagination">
-      <div class="pagination__container">
-        
+    <section class="pagination-section">
+      <div class="pagination-section__container">
+        <ul class="pagination-section__button pagination pagination-sm">
+          <li class="pagination-section__button__prev page-item disabled">
+            <span class="page-link">Anterior</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">
+              2
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="pagination-section__button__next page-item">
+            <a class="page-link" href="#">Siguiente</a>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container">
-        <img class="footer__logo" src="assets/images/logo.png" alt="">
+        <img class="footer__logo" src="assets/images/logo.png" alt="" />
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

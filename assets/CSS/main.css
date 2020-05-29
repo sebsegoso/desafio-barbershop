@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-  font-size: 70px;
+  font-size: 30px;
   font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
@@ -36,33 +36,79 @@ h3 {
 }
 
 .hero-section {
+  height: 505px;
   background-image: url(../images/post-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .hero-section__container {
-  padding: 10% 50%;
+  height: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   color: #FFF;
 }
+.hero-section__dot {
+  opacity: 0;
+}
 .hero-section__title {
-  width: 70vw;
+  width: 75vw;
 }
 
 .article {
-  color: #222323;
+  color: #6c6e70;
+}
+.article__container {
+  padding-top: 10%;
+}
+.article__date {
+  padding-bottom: 25px;
+}
+.article__content {
+  line-height: 33px;
+}
+.article__paragraph {
+  padding-bottom: 30px;
 }
 
 .author-section__image {
   border-radius: 50%;
 }
 
+.pagination-section {
+  background-color: #e6e7e7;
+}
+.pagination-section__container {
+  padding: 15% 0;
+}
+.pagination-section__button {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   background-color: #121619;
   display: flex;
   justify-content: center;
+}
+.nav {
+  background-color: #121619;
+}
+.nav__container {
+  padding: 1% 0;
+}
+.nav__logo {
+  width: 70px;
+}
+
+.article__buttons {
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=main.css.map */

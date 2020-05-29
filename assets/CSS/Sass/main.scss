@@ -1,6 +1,7 @@
 //Abstracts
 @import "abstracts/variables";
 //Vendors
+// @import 'vendors/bootstrap/scss/bootstrap.scss';
 //Base
 @import "base/base";
 @import "base/reset";
@@ -10,7 +11,10 @@
 @import "layout/hero-section";
 @import "layout/article";
 @import "layout/author-section";
+@import "layout/_pagination-section";
 @import "layout/footer";
 //Components
+@import "components/navbar";
+@import "components/buttons";
 //Pages
 //Theme
