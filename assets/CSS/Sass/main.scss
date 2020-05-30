@@ -1,7 +1,11 @@
  //Bootstrap edit by Sebsegoso
     //Border radius buttons
-    $border-radius-sm: 60px;
-    
+    $border-radius:         60px;
+    $border-radius-sm:         60px;
+    $link-color:             #e56353;
+    $pagination-color:       #121619;
+    $pagination-hover-color: #121619;
+    $pagination-active-bg:   #121619;
  //
 
 //Abstracts
@@ -17,7 +21,7 @@
 @import "layout/hero-section";
 @import "layout/article";
 @import "layout/author-section";
-@import "layout/_pagination-section";
+@import "layout/pagination-section";
 @import "layout/footer";
 //Components
 @import "components/navbar";
