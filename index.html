@@ -131,6 +131,7 @@
             error maiores ratione omnis! Saepe.
           </p>
         </div>
+        <!-- Small buttons -->
         <div class="article__buttons__small d-lg-none">
           <button
             type="button"
@@ -145,6 +146,7 @@
             Comentar en Twitter
           </button>
         </div>
+        <!-- Medium buttons -->
         <div class="article__buttons__large d-none d-lg-block">
           <button
             type="button"
@@ -198,7 +200,25 @@
     <!-- Pagination -->
     <section class="pagination-section">
       <div class="pagination-section__container">
-        <ul class="pagination-section__button pagination pagination-sm">
+        <!-- small -->
+        <ul class="pagination-section__button pagination pagination-sm d-lg-none">
+          <li class="pagination-section__button__prev page-item disabled">
+            <span class="page-link">Anterior</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <span class="page-link">
+              2
+              <span class="sr-only">(current)</span>
+            </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="pagination-section__button__next page-item">
+            <a class="page-link" href="#">Siguiente</a>
+          </li>
+        </ul>
+        <!-- medium -->
+        <ul class="pagination-section__button pagination d-none d-lg-flex">
           <li class="pagination-section__button__prev page-item disabled">
             <span class="page-link">Anterior</span>
           </li>
