@@ -509,7 +509,7 @@ kbd {
   font-size: 87.5%;
   color: #FFF;
   background-color: #212529;
-  border-radius: 0.2rem;
+  border-radius: 60px;
 }
 kbd kbd {
   padding: 0;
@@ -2076,7 +2076,7 @@ select.form-control:focus::-ms-value {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 60px;
 }
 
 .form-control-lg {
@@ -2895,7 +2895,7 @@ fieldset:disabled a.btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 60px;
 }
 
 .btn-block {
@@ -3421,7 +3421,7 @@ input[type=button].btn-block {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
-  border-radius: 0.2rem;
+  border-radius: 60px;
 }
 
 .input-group-lg > .custom-select,
@@ -4593,12 +4593,12 @@ input[type=button].btn-block {
   line-height: 1.5;
 }
 .pagination-sm .page-item:first-child .page-link {
-  border-top-left-radius: 0.2rem;
-  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 .pagination-sm .page-item:last-child .page-link {
-  border-top-right-radius: 0.2rem;
-  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 .badge {
@@ -6156,7 +6156,7 @@ button.bg-dark:focus {
 }
 
 .rounded-sm {
-  border-radius: 0.2rem !important;
+  border-radius: 60px !important;
 }
 
 .rounded {
@@ -9936,7 +9936,7 @@ h3 {
   color: #6c6e70;
 }
 .article__container {
-  padding-top: 10%;
+  padding-top: 35px;
 }
 .article__date {
   padding-bottom: 25px;
@@ -9948,15 +9948,25 @@ h3 {
   padding-bottom: 30px;
 }
 
+.author-section__container {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.author-section__profile {
+  display: flex;
+  align-items: center;
+}
 .author-section__image {
   border-radius: 50%;
+  width: 75%;
 }
 
 .pagination-section {
   background-color: #e6e7e7;
 }
 .pagination-section__container {
-  padding: 15% 0;
+  padding: 45px 0;
 }
 .pagination-section__button {
   margin: 0;
@@ -9970,6 +9980,11 @@ h3 {
   display: flex;
   justify-content: center;
 }
+.footer__logo {
+  padding: 60px 0;
+  width: 25%;
+}
+
 .nav {
   background-color: #121619;
 }
