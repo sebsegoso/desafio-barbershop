@@ -1,0 +1,11 @@
+.nav{
+    background-color: $eerie-black;
+    color: $white;
+    text-decoration: none;
+    &__container{
+        padding: 1% 0;
+    }
+    &__logo{
+        width: 70px;;
+    }
+}

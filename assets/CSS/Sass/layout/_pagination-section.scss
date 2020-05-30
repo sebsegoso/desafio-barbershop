@@ -1,0 +1,12 @@
+.pagination-section{
+    background-color: $platinum;
+    &__container{
+        padding: 45px 0;
+    }
+    &__button{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,11 +1,23 @@
 //Abstracts
+
 @import "abstracts/variables";
+@import "abstracts/bootstrap-edit";
 //Vendors
+@import "vendors/bootstrap/scss/bootstrap.scss";
 //Base
 @import "base/base";
 @import "base/reset";
 @import "base/typography";
 //Layout
+@import "layout/nav";
+@import "layout/hero-section";
+@import "layout/article";
+@import "layout/author-section";
+@import "layout/pagination-section";
+@import "layout/footer";
 //Components
+@import "components/navbar";
+@import "components/buttons";
+@import "components/pagination";
 //Pages
 //Theme

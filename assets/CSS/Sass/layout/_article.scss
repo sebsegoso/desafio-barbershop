@@ -1,0 +1,16 @@
+.article{
+    color: $nickel;
+    &__container{
+        padding-top: 35px;
+    }
+    &__date{
+        padding-bottom: 25px;
+    }
+    &__content{
+        line-height: 33px;
+    }
+    &__paragraph{
+        padding-bottom: 30px;
+    }
+    
+}
