@@ -1,4 +1,15 @@
 .article__buttons{
+    &__share,
+    &__comment{
+        background-color: $nickel;
+        &:hover{
+            background-color: $platinum;
+            border-color: $platinum;
+        }
+        &:focus{
+            background-color: $nickel;
+        }
+    }
     &__small{
         padding-bottom: 35px;
         display:flex;
@@ -6,5 +17,6 @@
     }
     &__large{
         padding-bottom: 35px;
+        
     }
 }

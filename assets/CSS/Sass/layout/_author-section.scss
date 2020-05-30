@@ -15,5 +15,8 @@
     &__links{
         font-weight: $light-300;
     }
-
+    &__description{
+        font-size: $small;
+        line-height: 33px;
+    }
 }

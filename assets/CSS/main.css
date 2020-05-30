@@ -4562,8 +4562,8 @@ input[type=button].btn-block {
 .page-item.active .page-link {
   z-index: 3;
   color: #FFF;
-  background-color: #121619;
-  border-color: #121619;
+  background-color: #6c6e70;
+  border-color: #6c6e70;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -9974,6 +9974,10 @@ h3 {
 .author-section__links {
   font-weight: 300;
 }
+.author-section__description {
+  font-size: 12px;
+  line-height: 33px;
+}
 
 .pagination-section {
   background-color: #e6e7e7;
@@ -10008,6 +10012,16 @@ h3 {
   width: 70px;
 }
 
+.article__buttons__share, .article__buttons__comment {
+  background-color: #6c6e70;
+}
+.article__buttons__share:hover, .article__buttons__comment:hover {
+  background-color: #e6e7e7;
+  border-color: #e6e7e7;
+}
+.article__buttons__share:focus, .article__buttons__comment:focus {
+  background-color: #6c6e70;
+}
 .article__buttons__small {
   padding-bottom: 35px;
   display: flex;
