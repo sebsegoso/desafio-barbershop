@@ -2,6 +2,8 @@
     &__share,
     &__comment{
         background-color: $nickel;
+        border-color: $nickel;
+        border-radius: 60px;
         &:hover{
             background-color: $platinum;
             border-color: $platinum;

@@ -24,8 +24,17 @@ h3{
     font-weight: $regular;
 }
 
+a{
+    &:hover{
+        color: $raisin-black;
+    }
+    &:active{
+        color: $platinum;
+    }
+    
+}
 @media (min-width: 992px) { 
     h1{
         font-size: $xx-large;
     }
- }
+}

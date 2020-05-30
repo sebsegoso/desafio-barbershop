@@ -1,20 +1,9 @@
- //Bootstrap edit by Sebsegoso
-   //Quit burger logo border
-    $navbar-dark-toggler-border-color:  rgba(0,0,0, 0);
-    //Border radius buttons
-    $border-radius:         60px;
-    $border-radius-sm:      60px;
-    //colors
-    $link-color:             #e56353;
-    $pagination-color:       #121619;
-    $pagination-hover-color: #121619;
-    $pagination-active-bg:   #6c6e70;
- //
-
 //Abstracts
+
 @import "abstracts/variables";
+@import "abstracts/bootstrap-edit";
 //Vendors
-@import 'vendors/bootstrap/scss/bootstrap.scss';
+@import "vendors/bootstrap/scss/bootstrap.scss";
 //Base
 @import "base/base";
 @import "base/reset";
@@ -29,5 +18,6 @@
 //Components
 @import "components/navbar";
 @import "components/buttons";
+@import "components/pagination";
 //Pages
 //Theme
